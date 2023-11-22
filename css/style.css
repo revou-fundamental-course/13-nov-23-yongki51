@@ -1,0 +1,220 @@
+.container-body {
+  width: 95%;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-section {
+  display: flex;
+}
+
+.nav-section > a {
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgba(226, 226, 226, 0.9);
+  margin-left: 5px;
+}
+
+.moto-section {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.clrGrey {
+  color: grey;
+}
+
+.home-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.col-section-article {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin-right: 30px;
+}
+
+.profile-row {
+  display: flex;
+  align-items: center;
+}
+
+.name-job {
+  display: flex;
+  flex-direction: column;
+}
+
+aside {
+  width: 25%;
+}
+
+aside > form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-contact-us {
+  background-color: rgba(226, 226, 226, 0.7);
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  border-radius: 5px;
+}
+
+.form-contact-us > div > :is(input, select) {
+  padding: 10px;
+}
+
+#idBtnSend {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border-color: black;
+}
+
+/* our-package-section */
+.title-our-package {
+  text-align: center;
+  background-color: rgba(226, 226, 226, 0.7);
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.list-package {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-package-row {
+  background-color: rgba(226, 226, 226, 0.7);
+  width: 31%;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.city-desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.city-title {
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+
+/* call us section */
+.call-us-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* Call Us */
+.closing-arg {
+  display: flex;
+  flex-direction: column;
+  max-width: 456px;
+  text-align: center;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+.call-btn {
+  padding: 10px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  border-color: black;
+}
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.terms-label {
+  margin-right: 10px;
+}
+
+/* slideshow */
+
+.mySlides {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.img-review {
+  width: 100%;
+}
+
+.desc-review-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.desc-review-label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.item-package-slider-container {
+  display: flex;
+}
+
+.item-center {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+  .col-section-article {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  .home-section {
+    display: block;
+  }
+
+  .list-package{
+    flex-wrap: wrap;
+  }
+
+  .item-package-row {
+    width: 100%;
+  }
+
+  .item-center {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
