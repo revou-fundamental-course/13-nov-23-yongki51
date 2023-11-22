@@ -191,6 +191,10 @@ footer {
   margin-left: 10px;
 }
 
+img[src="assets/tragent.png"]{
+  margin-right: 5px;
+}
+
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
   .col-section-article {

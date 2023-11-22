@@ -5,6 +5,7 @@ function validateForm() {
     document.forms["form-contact-us"]["nameContactEmail"].value;
   let nameContactInterested =
     document.forms["form-contact-us"]["nameContactInterested"].value;
+
   if (nameContactName == "") {
     alert("Name must be filled out");
     return false;
@@ -13,6 +14,12 @@ function validateForm() {
     return false;
   } else if (nameContactInterested == "") {
     alert("Your Interested must be filled out");
+    return false;
+  } else {
+    document.forms["form-contact-us"]["nameContactName"].value = "";
+    document.forms["form-contact-us"]["nameContactEmail"].value = "";
+    document.forms["form-contact-us"]["nameContactInterested"].value = "";
+    alert("Berhasil!");
     return false;
   }
 }
@@ -51,3 +58,11 @@ function showSlidesPack() {
 
 showSlides();
 showSlidesPack();
+
+function goToContactUsSection() {
+  window.location.href = "#idContactUs";
+}
+
+document
+  .getElementById("idBtnCallToAction")
+  .addEventListener("click", goToContactUsSection);
