@@ -196,7 +196,7 @@ img[src="assets/tragent.png"]{
 }
 
 /* For mobile phones: */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .col-section-article {
     width: 100%;
   }
@@ -221,4 +221,9 @@ img[src="assets/tragent.png"]{
     margin-right: 0px;
     margin-left: 0px;
   }
+
+  .nav-section > a {
+    font-size: small;
+  }
+
 }
