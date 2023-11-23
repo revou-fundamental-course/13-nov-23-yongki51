@@ -26,7 +26,7 @@ function validateForm() {
 
 let slideIndex = 0;
 function showSlides() {
-  let slides = document.getElementsByClassName("mySlides");
+  let slides = document.getElementsByClassName("my-slides");
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
